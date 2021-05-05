@@ -121,6 +121,23 @@
     .carousel {
         padding: 20px;
     }
+
+    .catalog {
+        &__tabs {
+            padding-left: 0;
+        }
+        &__tab {
+            width: 170px;
+        }
+    }
+
+    .reviews {
+        .review {
+            &__icon {
+                margin: 10px;
+            }
+        }
+    }
 }
 @media (max-width: 575px) {
     .header {
@@ -202,6 +219,59 @@
             width: 270px;
             margin: 0 auto;
             height: 46px;
+        }
+    }
+
+    .catalog {
+        padding: 10px 0;
+        .title {
+            font-size: 21px;
+        }
+        &__tabs {
+            margin-top: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+        }
+        &__tab {
+            width: 200px;
+            height: 45px;
+            margin-bottom: 4px;
+        }
+        &__content {
+            margin-top: 30px;
+        }
+    }
+
+    .reviews {
+        .title {
+            font-size: 25px;
+        }
+        .review {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 25px;
+            &__title {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .footer {
+        &__info {
+            width: 320px;
+            height: 220px;
+        }
+    }
+
+    .modal {
+        width: 320px;
+        padding: 40px 0;
+        &__close {
+            right: 20px;
+            top: 0;
         }
     }
 }
